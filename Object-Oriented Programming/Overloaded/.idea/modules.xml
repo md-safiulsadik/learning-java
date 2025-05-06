@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Overloaded.iml" filepath="$PROJECT_DIR$/.idea/Overloaded.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Overloaded.iml" filepath="$PROJECT_DIR$/Overloaded.iml" />
     </modules>
   </component>
 </project>

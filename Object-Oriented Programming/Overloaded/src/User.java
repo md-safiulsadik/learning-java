@@ -1,5 +1,6 @@
 public class User {
 
+
     String firstName;
     String lastName;
     String username;
@@ -29,4 +30,5 @@ public class User {
         this.age = 0;
         this.email = this.username + this.age + "@yahoo.com";
     }
+
 }
