@@ -1,26 +1,101 @@
-# Compiled class file
+# Ignore compiled Java class files
 *.class
 
-.idea
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Ignore package distributions
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Ignore build directories
+/build/
+/out/
+target/
+.gradle/
+/.idea/
+/.apt_generated/
+
+# Ignore Eclipse specific files
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# Ignore NetBeans specific files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Ignore VS Code specific files
+.vscode/
+
+# Ignore IntelliJ IDEA specific files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore logs
+*.log
+*.log.*
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+*~
+.cache/
+.tmp/
+
+# Ignore test reports
+/test-output/
+/surefire-reports/
+/jacoco.exec
+
+# Ignore coverage reports
+/coverage/
+/*.lcov
+
+# Ignore generated documentation
+/docs/
+
+# Ignore local environment config files
+.env
+.env.*
+
+# Ignore backup files
+*.bak
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore system IDE crash logs (macOS/Linux)
+hs_err_pid*.log
+replay_pid*.log
+
+# Ignore ctags and IDE helper files
+tags
+*.ctags
+
+# Ignore JetBrains Rider and other JetBrains specific
+.idea/
+*.sln.iml
+*.dotCover
+
+# Ignore miscellaneous build tool files
+.mvn/
