@@ -2,6 +2,6 @@
 public class Sandbox {
 
     public static void main(String[] args) {
-        Syi
+        System.out.println("Hello World!");
     }
 }

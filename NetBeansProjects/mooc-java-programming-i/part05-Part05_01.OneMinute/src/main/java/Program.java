@@ -11,11 +11,11 @@ public class Program {
             System.out.println(timer);
             timer.advance();
 
-//            try {
-//                Thread.sleep(10); // 10 milliseconds = 1 hundredth of a second
-//            } catch (Exception e) {
-//                System.out.println(e);
-//            }
+            try {
+                Thread.sleep(10); // 10 milliseconds = 1 hundredth of a second
+            } catch (Exception e) {
+                System.out.println(e);
+            }
         }
         
     }

@@ -18,7 +18,8 @@ public class Fitbyte {
     }
     
     public double targetHeartRate(double percentageOfMaximum) {
-        return 206.3 - (percentageOfMaximum * this.age);
+        double maximumHeartRate = 206.3 - (0.711 * this.age);
+        return (maximumHeartRate - this.restingHeartRate) * percentageOfMaximum + this.restingHeartRate;
     }
     
 }
