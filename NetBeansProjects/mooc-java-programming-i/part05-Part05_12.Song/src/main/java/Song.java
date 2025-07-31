@@ -1,4 +1,3 @@
-
 public class Song {
 
     private String artist;
@@ -12,9 +11,29 @@ public class Song {
     }
 
     @Override
-    public String toString() {
-        return this.artist + ": " + this.name + " (" + this.durationInSeconds + " s)";
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        
+        if (!(obj instanceof Song)) {
+            return false;
+        }
+        
+        Song compare = (Song) obj;
+        
+        if (this.artist.equals(compare.artist) &&
+            this.durationInSeconds == compare.durationInSeconds &&
+            this.name.equals(compare.name)) {
+            return true;
+        }
+        
+        return false;
     }
-
+    
+    @Override
+    public String toString() {
+        return artist + ": " + name + " (" + durationInSeconds + " s)";
+    }
 
 }
