@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class UserInterface {
 
-    private GradeRegister register;
-    private Scanner scanner;
+    private final GradeRegister register;
+    private final Scanner scanner;
 
     public UserInterface(GradeRegister register, Scanner scanner) {
         this.register = register;
