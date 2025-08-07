@@ -78,13 +78,13 @@ public class Manager {
         for (Integer point : this.points) {
             if (point <= 100 && point >= 90) {
                 five++;
-            } else if (point < 90 && point >= 80) {
+            }else if (point < 90 && point >= 80) {
                 four++;
-            } else if (point < 80 && point >= 70) {
+            }else if (point < 80 && point >= 70) {
                 three++;
-            } else if (point < 70 && point >= 60) {
+            }else if (point < 70 && point >= 60) {
                 two++;
-            } else if (point < 60 && point >= 50) {
+            }else if (point < 60 && point >= 50) {
                 one++;
             } else {
                 fail++;

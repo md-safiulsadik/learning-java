@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class mainProgram {
@@ -9,7 +10,10 @@ public class mainProgram {
         // as a parameter
 
         Scanner scan = new Scanner(System.in);
+        ArrayList<Bird> birds = new ArrayList<>();
+        BirdManager manager = new BirdManager(scan, birds);
 
+        UserInterface userInterface = new UserInterface(scan, manager);
+        userInterface.run();
     }
-
 }
