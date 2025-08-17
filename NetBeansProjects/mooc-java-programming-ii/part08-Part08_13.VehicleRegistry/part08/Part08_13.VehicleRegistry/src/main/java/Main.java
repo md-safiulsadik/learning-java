@@ -31,21 +31,5 @@ public class Main {
         System.out.println(owners.get(new LicensePlate("FI", "ABC-123")));
         System.out.println(owners.get(new LicensePlate("D", "B WQ-431")));
         // if the hasCode-method hasn't been overwritten, the owners won't be found
-        
-        
-       // The same name should not be repeated, print was incorrect when trying: 
-      
-//       VehicleRegistry vr = new VehicleRegistry(); 
-//        vr.add( new LicensePlate("FI", "AAA-111"), "Arto");
-//        vr.add( new LicensePlate("FI", "BBB-222"), "Pekka");
-//        vr.add( new LicensePlate("FI", "CCC-333"), "Arto");
-//        vr.printOwners();
-        
-        // Seaching for a plate that has been added to the registry should return its owner
-        VehicleRegistry vr = new VehicleRegistry(); 
-        vr.add( new LicensePlate("FI", "AAA-111"), "Arto");
-        vr.add( new LicensePlate("FI", "XX-999"), "Arto");
-        vr.search(new LicensePlate("FI", "XX-999")); // expected:<Arto> but was:<null>
-
     }
 }
