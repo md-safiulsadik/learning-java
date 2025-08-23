@@ -9,7 +9,7 @@
  * @author md-safiulsadik
  */
 public class Student extends Person {
-    int credit;
+    private int credit;
     
     public Student(String name, String location) {
         super(name, location);
@@ -26,7 +26,7 @@ public class Student extends Person {
     
     @Override
     public String toString() {
-        return this.name + " " + this.location + " Study credits " + this.credit;
+        return getName() + "\n  " + getLocation() + "\n  Study credits " + this.credit;
     }
     
 }

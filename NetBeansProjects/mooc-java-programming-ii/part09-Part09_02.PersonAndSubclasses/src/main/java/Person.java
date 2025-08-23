@@ -9,17 +9,25 @@
  * @author md-safiulsadik
  */
 public class Person {
-    String name;
-    String location;
+    private String name;
+    private String location;
     
     public Person(String name, String location) {
         this.name = name;
         this.location = location;
     }
     
+    public String getName() {
+        return this.name;
+    }
+    
+    public String getLocation() {
+        return this.location;
+    }
+    
     @Override
     public String toString() {
-        return this.name + " " + this.location;
+        return this.name + "\n  " + this.location;
     }
     
 }

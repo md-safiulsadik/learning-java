@@ -9,7 +9,7 @@
  * @author md-safiulsadik
  */
 public class Teacher extends Person{
-    int salary;
+    private int salary;
     
     public Teacher(String name, String location, int salary) {
         super(name, location);
@@ -18,6 +18,6 @@ public class Teacher extends Person{
     
     @Override
     public String toString() {
-        return this.name + " " + this.location + "salary " + this.salary + " euro/month";
+        return getName() + "\n  " + getLocation() + "\n  salary " + this.salary + " euro/month";
     }
 }
