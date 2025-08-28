@@ -5,21 +5,21 @@ import store.Product;
 import java.util.ArrayList;
 
 public class StoreManager {
-    private ArrayList<Product> products;
+    public ArrayList<Product> products;
 
     public StoreManager() {
         this.products = new ArrayList<>();
     }
 
-    public void addElectric(Electronics electronics) {
+    public void add(Electronics electronics) {
         products.add(electronics);
     }
 
-    public void addClothing(Clothing clothing) {
+    public void add(Clothing clothing) {
         products.add(clothing);
     }
 
-    public void addBook(Book book) {
+    public void add(Book book) {
         products.add(book);
     }
 

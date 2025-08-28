@@ -65,11 +65,11 @@ public class UserInterface {
         }
 
         if (choice == 1) {
-            storeManager.addElectric(electric());
+            storeManager.add(electric());
         } else if (choice == 2) {
-            storeManager.addClothing(clothing());
+            storeManager.add(clothing());
         } else {
-            storeManager.addBook(book());
+            storeManager.add(book());
         }
     }
 
