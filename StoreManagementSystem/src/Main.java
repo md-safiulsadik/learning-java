@@ -10,6 +10,8 @@ public class Main {
         StoreManager storeManager = new StoreManager();
         UserInterface ui = new UserInterface(scanner, storeManager);
 
+        ui.start();
+
 //        Electronics electronics = new Electronics("E34", "Fan", 43.34f, 5);
 //        Clothing clothing = new Clothing("E34", "Fan", 43.34f, "M");
 //        Book book = new Book("E34", "Fan", 43.34f, "NAde");

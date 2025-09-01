@@ -11,16 +11,8 @@ public class StoreManager {
         this.products = new ArrayList<>();
     }
 
-    public void add(Electronics electronics) {
-        products.add(electronics);
-    }
-
-    public void add(Clothing clothing) {
-        products.add(clothing);
-    }
-
-    public void add(Book book) {
-        products.add(book);
+    public void add(Product product) {
+        products.add(product);
     }
 
     public void search(String name) {
