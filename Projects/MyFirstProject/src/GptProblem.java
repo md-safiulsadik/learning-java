@@ -1,10 +1,16 @@
 
+import java.io.Serializable;
+import java.util.Objects;
 import java.util.Scanner;
 
 class GptProblem {
 
     public static void main(String[] args) {
         File[][] fileArray = new File[3][];
+
+        Serializable serializableString = "string";
+        CharSequence charSequenceString = "string";
+        Comparable<String> comparableString = "string";
 
         fileArray[0] = new File[2];
         fileArray[1] = new File[1];
