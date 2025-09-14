@@ -21,8 +21,8 @@ public class Store {
         this.scanner = scanner;
     }
 
-    // the method that handles the customers visit to the store.
     public void shop(String customer) {
+        
         ShoppingCart cart = new ShoppingCart();
         System.out.println("Welcome to the store " + customer);
         System.out.println("our selection:");
@@ -32,8 +32,10 @@ public class Store {
         }
 
         while (true) {
+            
             System.out.print("What to put in the cart (press enter to go to the register): ");
             String product = scanner.nextLine();
+            
             if (product.isEmpty()) {
                 break;
             }
@@ -47,7 +49,9 @@ public class Store {
         }
 
         System.out.println("your shoppingcart contents:");
+        
         cart.print();
+        
         System.out.println("total: " + cart.price());
     }
     

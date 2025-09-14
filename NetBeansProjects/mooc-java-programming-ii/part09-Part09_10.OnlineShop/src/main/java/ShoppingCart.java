@@ -24,11 +24,8 @@ public class ShoppingCart {
     
     public void add(String product, int price) {
         
-        if (!(itemMap.containsKey(product))) {
-            itemMap.put(product, new Item(product, 1, price));
-        } else {
-            itemMap.get(product).increaseQuantity();
-        }
+        this.itemMap.putIfAbsent(product, new Item(product, 0, price));
+        this.itemMap.get(product).increaseQuantity();
         
 //        itemMap.putIfAbsent(product, new Item(product, 1, price));
     }

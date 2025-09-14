@@ -43,6 +43,7 @@ public class Warehouse {
     }
     
     public boolean take(String product) {
+        
         if (stockMap.containsKey(product) && stockMap.get(product) > 0) {
             int newStock = stockMap.get(product);
             stockMap.replace(product, newStock, newStock - 1);
