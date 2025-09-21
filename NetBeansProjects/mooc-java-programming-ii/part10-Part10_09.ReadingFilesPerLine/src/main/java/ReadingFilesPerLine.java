@@ -11,7 +11,7 @@ public class ReadingFilesPerLine {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // test the method here
-
+        
     }
     
     public static List<String> read(String file) {
