@@ -40,6 +40,7 @@ class Main {
 class Exceptions {
 
     public void autoException() {
+
         int[] nums = new int[5];
         nums[10] = 100;
         System.out.println(nums[50]);
@@ -107,4 +108,31 @@ class LowBatteryLevelException extends Exception {
     public double getPercent() {
         return percent;
     }
+}
+
+class DivideZero extends Exception {
+
+    public DivideZero() {
+        super("The denominator can't be zero!");
+    }
+}
+
+class Cal {
+
+    public static void main(String[] args) {
+        int n = 12;
+        int m = 0;
+
+        try {
+            divide(n, m);
+        } catch (DivideZero e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static int divide(int a, int b) throws DivideZero {
+        if (b == 0) throw new DivideZero();
+        return a/b;
+    }
+
 }
