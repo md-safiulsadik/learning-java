@@ -357,12 +357,12 @@ class Test {
         list.add(new Employee("Karim", 30));
         list.add(new Employee("Sakib", 22));
 
-        // Comparator using Anonymous Class (sort by age)
-        Collections.sort(list, new Comparator<Employee>\() {
-            public int compare(Employee e1, Employee e2) {
-                return e1.age - e2.age;  // ascending by age
-            }
-        });
+//        // Comparator using Anonymous Class (sort by age)
+//        Collections.sort(list, new Comparator<Employee>\() {
+//            public int compare(Employee e1, Employee e2) {
+//                return e1.age - e2.age;  // ascending by age
+//            }
+//        });
 
         for(Employee e : list){
             System.out.println(e.name + " " + e.age);
